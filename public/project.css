@@ -1,0 +1,256 @@
+/*  JavaScript 6th Edition v 1.16
+ 
+    Large format style sheet
+
+    Filename: project.css
+*/
+
+/* apply a natural box layout model to all elements */
+* {
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+/* reset rules */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   font-size: 100%;
+   font: Courier New Bold;
+   vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+   display: block;
+}
+
+body {
+   line-height: 1;
+   width: 960px;
+   background: #04CCB1;
+   margin: 0 auto;
+   font-family: "Lucida Console", Monaco; 
+   position: relative;
+}
+
+ol, ul {
+   list-style: none;
+}
+
+blockquote, q {
+   quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+   content: '';
+   content: none;
+}
+
+table {
+   border-collapse: collapse;
+   border-spacing: 0;
+}
+
+a:link, a:visited {
+   text-decoration: none;
+   color: #CC041F;
+}
+
+a:hover {
+   text-decoration: underline;
+   color: inherit;
+}
+
+a:active {
+   text-decoration: none;
+   color: inherit;
+}
+
+/* container */
+#container {
+   background: #ECFF6E;
+}
+
+/* page header */
+header {
+   background: white;
+   font-size: 50px;
+   float: center;
+}
+
+/* navigation */
+nav {
+   font-size: 16px;
+   font-family: "Lucida Console", Monaco, monospace;
+   padding-top: 30px;
+   background: #ECFF6E;
+   float: center;
+   width: 740px;
+}
+
+nav ul {
+   text-align: center;
+}
+
+nav ul li {
+   display: inline-block;
+   padding: 8px 15px;
+   margin: 0 3px;
+   background: #94CEF2;
+   -moz-border-radius-topleft: 7px;
+   -moz-border-radius-topright: 7px;
+   -webkit-border-top-left-radius: 7px;
+   -webkit-border-top-right-radius: 7px;
+   border-top-left-radius: 7px;
+   border-top-right-radius: 7px;
+   -webkit-box-shadow: 2px -2px 0px #FF3B3B,
+                       2px 0px 0px #94CEF2;
+   -moz-box-shadow:    2px -2px 0px #94CEF2,
+                       2px 0px 0px #94CEF2;
+   box-shadow:         2px -2px 0px #94CEF2,
+                       2px 0px 0px #94CEF2;
+}
+
+nav ul #currentpage {
+   background: #FF3B3B;
+   color: #FF3B3B;
+}
+
+/* main content */
+article {
+   width: 640px;
+   float: inherit;
+   font-family: "Lucida Console", Monaco, monospace;
+   text-align: left;
+   background: white;
+   padding: 10px;
+   border-top: 1px solid #94CEF2;
+}
+
+article h2 {
+   font-family: "Lucida Console", Monaco, monospace;
+   font-size: 1.2em;
+   font-weight: bold;
+   text-align: center;
+   margin-bottom: 6px;
+}
+
+article p {
+   margin-bottom: 6px;
+   line-height: 1.2em;
+}
+
+article table {
+   margin: 0 auto;
+}
+
+article th, article td {
+   border: 1px solid black;
+   border-collapse: collapse;
+   padding: 5px;
+}
+
+article th {
+   font-weight: bold;
+   background: #EFE0B9;
+}
+
+/* form */
+form {
+   width: 600px;
+   margin: 0 auto;
+}
+
+form fieldset{
+   border-stylr: solid; 
+   background: #EFE0B9;
+   position: relative;
+}
+
+form legend {
+   font-size: 1.5em;
+   font-weight: bold;
+   margin: 10px;
+}
+
+form legend span {
+   position: relative;
+   top: 20px;
+}
+
+form label {
+   display: block;
+   font-size: 1.2em;
+   width: 480px;
+   text-align: left;
+}
+form label p {
+   float: left;
+   width: 100%;
+   text-align: left;
+}
+
+form label p:nth-child(2) {
+   font-size: 0.8em;
+}
+
+form input {
+   padding: 1%;
+   background: #333;
+   color: #BBB;
+   border: none;
+   font: normal 1em/1.5em "Lucida Console", Monaco, monospace;
+   float: center;
+   clear: both;
+   width: 60px;
+   margin-left: 10px;
+   margin-bottom: 20px;
+   position: relative;
+   top: -0.4em;
+}
+
+form input[type="checkbox"] {
+   position: static;
+}
+
+/* sidebar */
+aside {
+   float: left;
+   color: #ECFF6E;
+   top: 190px;
+   padding: 30px;
+}
+
+aside #estimate {
+   font-weight: bold;
+}
+
+/* footer */
+footer {
+   background: #ECFF6E;
+   width: 100%;
+   clear: both;
+   font-size: 14px;
+   padding: 10px;
+}
+
+footer p {
+   text-align: center;
+}
